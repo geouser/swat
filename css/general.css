@@ -283,9 +283,12 @@ nav>li:hover ul.sub li a        {   display: inline-block }
   top: 0;
   left: 0;
   right: 0;
+  z-index: 0;
 }
 .reviews h2 {
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -437,6 +440,14 @@ footer ul {
   height: 25px;
   margin-right: 9px;
   background-size: auto 100%;
+  opacity: .9;
+  transition: all 0.3s ease;
+}
+.socials li a:hover {
+  opacity: 1;
+}
+.socials li a:active {
+  opacity: .8;
 }
 .socials a.vk {
   background-image: url(../images/socials.png);
@@ -481,22 +492,23 @@ footer ul {
   vertical-align: middle;
 }
 
-.footer_contancts a i {
+a.f_mail i,
+a.f_phone i {
   display: inline-block;
   vertical-align: middle;
   width: 14px;
-  height: 16px;
+  height: 18px;
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 6px;
 }
-.footer_contancts a.f_mail i {
+a.f_mail i {
   background-image: url(../images/envelope.png);
 }
-.footer_contancts a.f_phone i {
+a.f_phone i {
   background-image: url(../images/phone.png);
-  vertical-align: -3px;
+  vertical-align: middle;
 }
 
 
