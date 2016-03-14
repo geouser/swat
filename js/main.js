@@ -37,6 +37,12 @@ jQuery(document).ready(function($) {
     $.magnificPopup.close();
   });
 
+$('.offerInfo').slick({
+  arrows: false,
+  dots: false,
+  fade: true
+});
+
 });
 
 

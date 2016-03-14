@@ -12,17 +12,6 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
    -------------------------------------- */
 
 @font-face {
-    font-family: 'pnr';
-    src: url('../fonts/proximanova-reg-webfont.eot');
-    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
-         url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'pnb';
     src: url('../fonts/proximanova-bold-webfont.eot');
     src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -31,8 +20,19 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
          url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
 
+}
+@font-face {
+    font-family: 'pnr';
+    src: url('../fonts/proximanova-reg-webfont.eot');
+    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @font-face {
     font-family: 'pnxb';
     src: url('../fonts/proximanova-xbold-webfont.eot');
@@ -42,6 +42,7 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
          url('../fonts/proximanova-xbold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
 }
 /* font-family: "SegoeUIRegular"; */
 @font-face {
@@ -93,6 +94,7 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
     font-style: normal;
     font-weight: normal;
 }
+
 
 
 /*General styles*/
@@ -192,6 +194,87 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 
 
 
+
+header .wrapper          {   }
+
+
+        /* ------- navigation --------- */
+nav                             {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+nav li                          {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    position: relative;
+                                }
+nav li:before                   {content: " | "; color: red;}
+nav li:first-child:before       {content: none;}
+nav li  a                       {
+                                    font: 12px 'Arial';
+                                    font-weight: 700;
+                                    color: #000;
+                                    text-transform: uppercase;
+                                    display: inline-block;
+                                    padding: 5px 10px;
+                                    position: relative;
+                                    -webkit-transition: all .3s;
+                                    -moz-transition: all .3s;
+                                    -ms-transition: all .3s;
+                                    -o-transition: all .3s;
+                                    transition: all .3s;
+                                }
+nav li:first-child  a           {   margin-left: 0 }
+nav li:last-child  a            {   margin-right: 0 }
+
+
+
+
+/* ------- sub menu --------- */
+.sub                            {
+                                     display: inline-block;
+                                     position: absolute;
+                                     padding: 20px 10px 10px;
+                                     margin: 0;
+                                     left: 0;
+                                     top: 100%;
+                                     min-width: 150px;
+                                     background: rgb(0, 0, 0);
+                                     border-bottom-left-radius: 2px;
+                                     -webkit-border-bottom-tight-radius: 2px;
+                                     border-bottom-left-radius: 2px;
+                                     -webkit-border-bottom-right-radius: 2px;
+                                     z-index: 1000;
+                                     orphans: 0;
+                                     visibility: hidden;
+                                     opacity: 0;
+                                     transition: visibility 0s, opacity 0.3s linear;
+                                     -webkit-transition: visibility 0s, opacity .3s linear;
+                                }
+nav li:last-child .sub          {
+                                     left: auto;
+                                     right: 0;
+                                     z-index: 2;
+                                }
+.sub  li                        {
+                                     display: block;
+                                     text-align: left;
+                                }
+.sub  li a                      {
+                                     margin: 5px 0;
+                                     color: #FFF;
+                                     padding: 0;
+                                     font: 13px 'open_sansbold';
+                                     text-decoration: none;
+                                     display: none;
+                                     margin-bottom: 10px;
+                                }
+nav>li:hover>a                  {    color: red }
+nav>li:hover ul.sub             {
+                                     visibility: visible;
+                                     opacity: 1;
+                                }
+nav>li:hover ul.sub li a        {   display: inline-block }
 
 
 /*---------------------------------------------------------------*/
