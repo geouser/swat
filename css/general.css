@@ -265,8 +265,6 @@ nav>li:hover ul.sub             {
 nav>li:hover ul.sub li a        {   display: inline-block }
 
 
-<<<<<<< HEAD
-
 .button  {height: 40px; color: #0A0A0A; font: 13px 'pnxb'; text-transform: uppercase; padding: 0 20px; background-image: url("../images/button_y.png"); -webkit-background-size: 100% 100%;
      -o-background-size: 100% 100%;
         background-size: 100% 100%; background-color: transparent; border: none; display: inline-block; line-height: 42px; -webkit-transition: all .2s;
@@ -285,7 +283,6 @@ nav>li:hover ul.sub li a        {   display: inline-block }
 .offerInfo_text h1 {font-size: 42px; font-family: 'pnxb'; text-transform: uppercase; line-height: 60px;}
 
 /*---------------------------------------------------------------*/
-=======
 /*---------------------------------------------------------------*/
 /* --------------------------------------
    project_video
