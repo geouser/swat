@@ -229,10 +229,7 @@ nav li:nth-child(3) a {margin: 0 2px;}
                                      min-width: 150px;
                                      background: rgba(0, 0, 0, .9);
                                      border-bottom-left-radius: 2px;
-                                     -webkit-border-bottom-tight-radius: 2px;
-                                     border-bottom-left-radius: 2px;
-                                     -webkit-border-bottom-right-radius: 2px;
-                                     z-index: 1000;
+                                     z-index: 2;
                                      orphans: 0;
                                      visibility: hidden;
                                      opacity: 0;
