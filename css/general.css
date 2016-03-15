@@ -787,21 +787,24 @@ footer ul {
 .footer_contancts {
   text-align: left;
 }
+.footer_contancts .button{
+  height: 30px;
+  line-height: 32px;
+}
+
+
+
 .f_phone {
   font-size: 18px;
 }
 .f_mail {
   font-size: 16px;
 }
-.footer_contancts a strong {
+a.f_mail strong,
+a.f_phone strong {
   display: inline-block;
   vertical-align: middle;
 }
-.footer_contancts .button{
-  height: 30px;
-  line-height: 32px;
-}
-
 a.f_mail i,
 a.f_phone i {
   display: inline-block;
@@ -1192,4 +1195,30 @@ article img {
 .special_training .button {
   top: 0;
   margin-top: 60px;
+}
+
+
+/*contacts page*/
+.contacts {
+  padding-bottom: 30px;
+}
+.media-item__video--image {
+  height: auto;
+  float: right;
+}
+.media-item__title--left {
+  left: -70px;
+  right: auto;
+  text-align: left;
+  padding-left: 35px;
+}
+.contacts .media-item__title span {
+  font-size: 18px;
+  line-height: normal;
+}
+.contacts .media-item__title a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
 }
