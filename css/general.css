@@ -393,6 +393,9 @@ nav>li:hover ul.sub             {
 /* ------- nav big --------- */
 .bg                                     {    background-color: #0A0A0A;
                                              background-image: url('../images/bg.jpg');
+                                             -webkit-background-size: cover;
+                                                  -o-background-size: cover;
+                                                     background-size: cover;
                                              background-position: 50% 0%;
                                              padding-bottom: 60px;
                                              overflow: visible;
