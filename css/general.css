@@ -200,14 +200,21 @@ header            {    position: relative;
 .mail             {    color: #FFF;
                        font: 16px 'proxima_nova_bold';
                   }
+header .socials ul {margin: 0; margin-left: 18px;}
+.socials li a {margin-right: 6px;}
 
+header .button {height: 35px;
+                       line-height: 37px;}
 
 /* ------- navigation --------- */
 nav                       {    display: inline-block;
                                vertical-align: middle;
                                background-color: #7F1F19;
                                width: 100%;
+                               position: relative;
                           }
+nav:before                {width: 0; height: 0; border-top: 20px solid #7F1F19; border-left: 15px solid transparent; content: ""; display: block; position: absolute; left: -15px; top: 0;}
+nav:after                 {width: 0; height: 0; border-top: 20px solid #7F1F19; border-right: 15px solid transparent; content: ""; display: block; position: absolute; right: -15px; top: 0;}
 nav>li                    {    display: inline-block;
                                vertical-align: middle;
                                position: relative;
@@ -366,13 +373,15 @@ nav>li:hover ul.sub             {
 .offerInfo_text                         {    width: 510px;
                                              color: #FFF;
                                              text-align: center;
-                                             margin-top: 120px;
+                                             margin-top: 97px;
                                         }
 .offerInfo_text h1                      {    font-size: 42px;
                                              font-family: 'proxima_nova_extrabold';
-                                             text-transform: uppercase;
                                              line-height: 60px;
+                                             margin-left: -13px;
                                         }
+.offerInfo_text p                       {   color: #FFF; font-size: 20px;}
+.offerInfo_text h1.upper                {   text-transform: uppercase;}
 .offerInfo_text .button                 {    position: relative;
                                              margin-top: 20px;
                                         }
@@ -388,7 +397,7 @@ nav>li:hover ul.sub             {
 .offerInfo_text .button:before          {    left: -140px }
 .offerInfo_text .button:after           {    right: -140px }
 
-
+.right                                  {   float: right;}
 
 /* ------- nav big --------- */
 .bg                                     {    background-color: #0A0A0A;
@@ -405,6 +414,9 @@ nav>li:hover ul.sub             {
                                              height: 780px;
                                              top: -180px;
                                              margin-bottom: -180px;
+                                             -webkit-box-shadow: 0px 0px 19px 14px rgba(0,0,0,1);
+                                            -moz-box-shadow: 0px 0px 19px 14px rgba(0,0,0,1);
+                                            box-shadow: 0px 0px 19px 14px rgba(0,0,0,1);
                                         }
 .navBig_item                            {    width: 33.333%;
                                              height: 260px;
@@ -537,7 +549,7 @@ nav>li:hover ul.sub             {
 
 span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../images/about_img.png"); -webkit-background-size: 100% 100%;
      -o-background-size: 100% 100%;
-        background-size: 100% 100%; text-align: center; font: 21px 'proxima_nova_extrabold'; display: block; margin: 0 auto 10px; padding-top: 15px; padding-right: 2px;}
+        background-size: 100% 100%; text-align: center; font: 21px 'proxima_nova_extrabold'; display: block; margin: 0 auto 10px; padding-top: 15px; padding-right: 3px;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------

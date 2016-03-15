@@ -40,7 +40,12 @@ jQuery(document).ready(function($) {
 $('.offerInfo').slick({
   arrows: false,
   dots: false,
-  fade: true
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  pauseOnHover: false,
+  easing: 'ease-out',
+  cssEase: 'ease-out'
 });
 
 
