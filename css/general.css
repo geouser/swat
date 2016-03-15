@@ -323,7 +323,10 @@ nav>li:hover ul.sub             {
                 -webkit-transform: skew(-15deg);
                 -ms-transform: skew(-15deg);
                 -o-transform: skew(-15deg);
-                transform: skew(-15deg);}
+                transform: skew(-15deg);
+                height: 40px;
+                line-height: 42px;
+                }
 .button span { -webkit-transform: skew(15deg);
                 -ms-transform: skew(15deg);
                 -o-transform: skew(15deg);
@@ -489,7 +492,7 @@ nav>li:hover ul.sub             {
 .navBig_item form                       {    position: relative;
                                              z-index: 3;
                                         }
-.navBig_item form span                  {    display: block;
+.navBig_item form>span                  {    display: block;
                                              width: 260px;
                                              display: block;
                                              margin: 20px auto;
