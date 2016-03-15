@@ -393,13 +393,15 @@ nav>li:hover ul.sub             {
 /* ------- nav big --------- */
 .bg                                     {    background-color: #0A0A0A;
                                              background-image: url('../images/bg.jpg');
-                                             background-position: 50% -225%;
+                                             background-position: 50% 0%;
                                              padding-bottom: 60px;
+                                             overflow: visible;
                                         }
 .navBig                                 {    text-align: center;
                                              position: relative;
                                              height: 780px;
-                                             margin-top: -180px;
+                                             top: -180px;
+                                             margin-bottom: -180px;
                                         }
 .navBig_item                            {    width: 33.333%;
                                              height: 260px;
