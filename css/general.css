@@ -590,6 +590,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   color: #fff;
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
 }
 
 
@@ -682,7 +683,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   margin-left: -75px;
   height: 40px;
   line-height: 42px;
-  z-index: 1;
+  z-index: 5;
 }
 .review__more:after {
   content: '';
@@ -696,7 +697,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   background-color: #fff;
   opacity: .1;
   cursor: initial;
-  z-index: 0;
+  z-index: -1;
 }
 
 
@@ -959,6 +960,7 @@ footer a:hover {
 .garanties h2 {
   color: #fff;
   margin-bottom: 40px;
+  font-size: 28px;
 }
 .garanty {
   width: 25%;
@@ -1002,6 +1004,7 @@ footer a:hover {
 }
 .special h2 {
   margin-bottom: 10px;
+  color: #000;
 }
 .special article {
   padding-top: 40px;
@@ -1051,6 +1054,7 @@ article {
   font-size: 16px;
   line-height: 30px;
   text-align: left;
+  color: #000;
 }
 article p,
 article ul,
@@ -1101,7 +1105,7 @@ article img {
   margin-bottom: 30px;
 }
 .example .wrap {
-  box-shadow: 0px 2px 51px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 2px 51px 0px rgba(0, 0, 0, .5);
 }
 .example h3 {
   font-size: 24px;
@@ -1144,3 +1148,48 @@ article img {
 
 
 /*about page*/
+
+
+/*special training page*/
+.example .video {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.example .video.vertical:after {
+  vertical-align: bottom;
+}
+.example .video p {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 22px;
+  line-height: 30px;
+  max-width: 95%;
+  color: #fff;
+  text-align: left;
+}
+.example .video.text {
+  padding: 35px;
+}
+.example .limit .button {
+  margin-top: 20px;
+}
+
+
+.special_training {
+  padding-bottom: 60px;
+}
+.special_training article:nth-of-type(2n) .special__preview {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+.special_training article:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.special_training .button {
+  top: 0;
+  margin-top: 60px;
+}
