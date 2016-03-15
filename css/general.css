@@ -797,23 +797,38 @@ footer a:hover {
   text-align: left;
   padding-top: 15px;
   margin-bottom: 30px;
-  font-family: "SegoeUIRegular";
-  font-size: 14px;
   line-height: 24px;
 }
-.special__content p,
-.special__content ul,
-.special__content h3 {
+.special__content {
+  font-size: 14px;
+}
+.special .button {
+  position: relative;
+  top: -28px;
+}
+
+
+
+article {
+  font-family: "SegoeUIRegular";
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+}
+article p,
+article ul,
+article h3 {
   margin: 0;
   margin-bottom: 15px;
 }
-.special__content ul li {
+article ul li {
   list-style: none;
   display: block;
   padding-left: 20px;
   position: relative;
+  font-size: 14px;
 }
-.special__content ul li:before {
+article ul li:before {
   height: 8px;
   width: 8px;
   content: '';
@@ -824,26 +839,32 @@ footer a:hover {
   left: 0;
   box-sizing: border-box;
 }
-.special__content h3 {
+article h3 {
   font-size: 24px;
   font-family: 'proxima_nova_extrabold';
 }
-.special__content h4 {
+article h4 {
   color: #7f1f19;
   font-size: 16px;
   font-weight: bold;
 }
-
-.special .button {
-  position: relative;
-  top: -28px;
+article img {
+  max-width: 100%;
+  margin: 75px auto;
+  height: auto;
+  box-shadow: 0px 5px 53px 0px rgba(0, 0, 0, .5);
 }
+
+
+
+
+
 
 .example {
   margin-bottom: 30px;
 }
 .example .wrap {
-  box-shadow: 0px 5px 53px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 2px 51px 0px rgba(0, 0, 0, 1);
 }
 .example h3 {
   font-size: 24px;
@@ -883,3 +904,6 @@ footer a:hover {
 .example .limit .container span strong {
   font-size: 26px;
 }
+
+
+/*about page*/
