@@ -43,6 +43,9 @@ $('.offerInfo').slick({
   fade: true
 });
 
+
+$('ul.sub').parent().addClass('hasSub');
+
 });
 
 

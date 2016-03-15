@@ -25,12 +25,14 @@
                 <div class="wrapper">
                     <div class="offer_top flex-between flex-center-all">
                         <a href="mailto:specnazday@yandex.ru" class="mail">specnazday@yandex.ru</a>
-                        <div class="socialIcons">
-                            <a href="" class="vk"></a>
-                            <a href="" class="fb"></a>
-                            <a href="" class="inst"></a>
-                            <a href="" class="youtube"></a>
-                            <a href="" class="tw"></a>
+                        <div class="socials">
+                            <ul>
+                                <li><a href="" class="vk"></a></li>
+                                <li><a href="" class="fb"></a></li>
+                                <li><a href="" class="insta"></a></li>
+                                <li><a href="" class="yt"></a></li>
+                                <li><a href="" class="tw"></a></li>
+                            </ul>
                         </div>
                         <a href="tel:+7 (925) 380-37-74" class="tel">+7 (925) 380-37-74</a>
                         <button class="button">
@@ -76,7 +78,7 @@
             </header><!-- end header -->
 
             <div class="offerInfo">
-                <div class="offerInfo_slide" style="background-image: url('images/slide_1.jpg');">
+                <div class="offerInfo_slide" style="background-image: url('images/slide_1.png');">
                     <div class="wrapper vertical">
                         <div class="offerInfo_text">
                             <h1>Узнай свои пределы прочности. Раскрой свой потенциал!</h1>
@@ -112,62 +114,108 @@
 
         </section> <!-- end offer -->
 
-        <section>
+        <section class="bg">
             <div class="wrapper">
                 <div class="navBig">
                     <a href="" class="navBig_item">
-                        <span>О проекте</span>
+                        <img src="images/navBig_1.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                            <div>
+                                <li><span>О проекте</span></li>
+                            </div>
+                        </div>
                     </a>
+
                     <a href="" class="navBig_item">
-                        <span>Двухдневный курс по специальной подготовке</span>
+                        <img src="images/navBig_2.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                            <div>
+                                <li><span>Двухдневный курс</span></li> 
+                                <li><span>по специальной</span></li> 
+                                <li><span>подготовке</span></li>
+                             </div>
+                        </div>
                     </a>
+
                     <a href="" class="navBig_item">
-                        <span>Фотогалерея</span>
+                        <img src="images/navBig_3.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                            <div>
+                                <li><span>Фотогалерея</span></li>
+                            </div>
+                        </div>
                     </a>
+
                     <a href="" class="navBig_item">
-                        <span>Факультативые занятия</span>
+                        <img src="images/navBig_4.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                            <div>
+                                <li><span>Факультативые</span></li>
+                                <li><span>занятия</span></li>
+                            </div>
+                        </div>
                     </a>
+
+                    <div class="navBig_item">
+                        <img src="images/navBig_5-1.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                             <div>
+                                <li><span>Подпишитесь на</span></li> <li><span>рассылку</span></li>
+                                <form action="">
+                                    <span><input type="text" placeholder="Введите свой e-mail"></span>
+                                    <button type="submit" class="button">
+                                        Подписаться 
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="" class="navBig_item">
-                        <span>Подпишитесь на рассылку</span>
-                        <form action="">
-                            <input type="text" placeholder="Введите свой e-mail">
-                            <button type="submit">
-                                Подписаться
-                            </button>
-                        </form>
+                        <img src="images/navBig_5.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                             <div>
+                                <li><span>Трехдневный курс</span></li> 
+                                <li><span>по специальной</span></li> 
+                                <li><span>подготовке</span></li>
+                            </div>
+                        </div>
                     </a>
+
                     <a href="" class="navBig_item">
-                        <span>Трехдневный курс по специальной подготовке</span>
-                    </a>
-                    <a href="" class="navBig_item">
-                        <span>Видео</span>
+                        <img src="images/navBig_6.jpg" alt="">
+                        <div class="navBig_item_wrap flex-center-all">
+                            <li><span>Видео</span></li>
+                        </div>
                     </a>
                 </div>
             </div>
-        </section>
 
-
-        <section class="aboutBlock">
-            <div class="wrapper">
-                <h2 class="white">Факты о нас</h2>
-                <div class="aboutBlock_item">
-                    <img src="" alt="">
-                    <span>Старт проекта в 2013 г</span>
+             <section class="aboutBlock">
+                <div class="wrapper clearfix">
+                    <h2 class="white">Факты о нас</h2>
+                    <div class="aboutBlock_item">
+                        <span class="aboutBlock_item_num">2013</span>
+                        <span>Старт проекта <br> в 2013 г</span>
+                    </div>
+                    <div class="aboutBlock_item">
+                        <span class="aboutBlock_item_num">1500</span>
+                        <span>Более 1500 чел. <br> прошли испытания</span>
+                    </div> 
+                    <div class="aboutBlock_item">
+                        <span class="aboutBlock_item_num">100</span>
+                        <span>Более 100 чел. <br> успешно прошли курс <br> специальной подготовки</span>
+                    </div> 
+                    <div class="aboutBlock_item">
+                        <span class="aboutBlock_item_num">12</span>
+                        <span>В проекте <br> 12 действующих <br> инструкторов спецназа</span>
+                    </div>  
                 </div>
-                <div class="aboutBlock_item">
-                    <img src="" alt="">
-                    <span>Более 1500 чел. прошли испытания</span>
-                </div> 
-                <div class="aboutBlock_item">
-                    <img src="" alt="">
-                    <span>Более 100 чел. успешно прошли курс специальной подготовки</span>
-                </div> 
-                <div class="aboutBlock_item">
-                    <img src="" alt="">
-                    <span>В проекте 12 действующих инструкторов спецназа/span>
-                </div>  
-            </div>
+            </section>
+
         </section>
+
+
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
