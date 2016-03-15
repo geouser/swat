@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
     $.magnificPopup.close();
   });
 
-$('.offerInfo').slick({
+$('.offerInfo_slider').slick({
   arrows: false,
   dots: false,
   fade: true,

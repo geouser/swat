@@ -169,10 +169,21 @@ h2 {font: 36px 'proxima_nova_bold'; text-align: center; color: #FFF; text-transf
 /* --------------------------------------
    Custom Styles
    -------------------------------------- */
-.indexPage .offer {    height: 820px }
+.indexPage .offer {    height: 820px; background-image: none;}
 .offer            {    background-color: #0A0A0A;
                        position: relative;
+                       background-image: url("../images/video_bg.jpg");
+                       background-position: center top;
+                       -webkit-background-size: cover;
+                            -o-background-size: cover;
+                               background-size: cover;
                   }
+
+.aboutPage .offer {background-image: url("../images/about_bg.jpg");}
+.specialsPage .offer {background-image: url("../images/spec_bg.jpg");}
+.specTrainPage .offer {background-image: url("../images/spectrain_bg.jpg");}
+
+
 header            {    position: relative;
                        z-index: 3;
                   }
@@ -350,13 +361,16 @@ nav>li:hover ul.sub             {
 
 
 /* ------- offer info --------- */
-.offerInfo                              {    height: 820px;
+.offerInfo .wrapper                     {    text-align: left; padding: 80px 0 110px;}                            
+.indexPage .offerInfo                   {    height: 840px;
                                              position: absolute;
                                              left: 0;
                                              top: 0;
                                              width: 100%;
                                              background-color: #0A0A0A;
+                                             padding: 0;
                                         }
+.indexPage .offerInfo .wrapper          {   padding: 0;}
 .offerInfo .slick-list,
 .offerInfo .slick-track                 {    height: 100%;
                                              background-color: #0A0A0A;
@@ -375,16 +389,40 @@ nav>li:hover ul.sub             {
                                              text-align: center;
                                              margin-top: 97px;
                                         }
-.offerInfo_text h1                      {    font-size: 42px;
+                h1                      {    font-size: 42px;
                                              font-family: 'proxima_nova_extrabold';
                                              line-height: 60px;
                                              margin-left: -13px;
+                                             text-transform: uppercase;
+                                             color: #FFF;
                                         }
+h1 span                                 {   display: block; font: 30px 'proxima_nova_regular'; line-height: 46px;}
 .offerInfo_text p                       {   color: #FFF; font-size: 20px;}
+.offerInfo_text h1                      {   text-transform: none;}
 .offerInfo_text h1.upper                {   text-transform: uppercase;}
 .offerInfo_text .button                 {    position: relative;
                                              margin-top: 20px;
                                         }
+
+.additionalInfo                         {   display: inline-block;
+                                            padding: 25px 17px;
+                                            color: #fff;
+                                             -webkit-transform: skewX(-10deg);
+                                             -moz-transform: skewX(-10deg);
+                                             -ms-transform: skewX(-10deg);
+                                             -o-transform: skewX(-10deg);
+                                             transform: skewX(-10deg);
+                                            background-color: rgba(127,31,25, .8);
+                                            margin: 30px 0 30px -20px;
+                                        }
+.additionalInfo h3,
+.additionalInfo p                       {   -webkit-transform: skewX(10deg);
+                                             -moz-transform: skewX(10deg);
+                                             -ms-transform: skewX(10deg);
+                                             -o-transform: skewX(10deg);
+                                             transform: skewX(10deg);}
+.additionalInfo h3                      {   text-transform: uppercase; font-family: 'proxima_nova_extrabold';}
+.additionalInfo p                       {   font: 18px 'proxima_nova_regular'; color: #FFF; margin-top: 10px; padding-left: 4px;}
 .offerInfo_text .button:before,
 .offerInfo_text .button:after           {    content: "";
                                              display: inline-block;
