@@ -602,6 +602,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   color: #fff;
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
 }
 
 
@@ -694,7 +695,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   margin-left: -75px;
   height: 40px;
   line-height: 42px;
-  z-index: 1;
+  z-index: 5;
 }
 .review__more:after {
   content: '';
@@ -708,7 +709,7 @@ span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../i
   background-color: #fff;
   opacity: .1;
   cursor: initial;
-  z-index: 0;
+  z-index: -1;
 }
 
 
@@ -798,21 +799,24 @@ footer ul {
 .footer_contancts {
   text-align: left;
 }
+.footer_contancts .button{
+  height: 30px;
+  line-height: 32px;
+}
+
+
+
 .f_phone {
   font-size: 18px;
 }
 .f_mail {
   font-size: 16px;
 }
-.footer_contancts a strong {
+a.f_mail strong,
+a.f_phone strong {
   display: inline-block;
   vertical-align: middle;
 }
-.footer_contancts .button{
-  height: 30px;
-  line-height: 32px;
-}
-
 a.f_mail i,
 a.f_phone i {
   display: inline-block;
@@ -971,6 +975,7 @@ footer a:hover {
 .garanties h2 {
   color: #fff;
   margin-bottom: 40px;
+  font-size: 28px;
 }
 .garanty {
   width: 25%;
@@ -1014,6 +1019,7 @@ footer a:hover {
 }
 .special h2 {
   margin-bottom: 10px;
+  color: #000;
 }
 .special article {
   padding-top: 40px;
@@ -1046,23 +1052,39 @@ footer a:hover {
   text-align: left;
   padding-top: 15px;
   margin-bottom: 30px;
-  font-family: "SegoeUIRegular";
-  font-size: 14px;
   line-height: 24px;
 }
-.special__content p,
-.special__content ul,
-.special__content h3 {
+.special__content {
+  font-size: 14px;
+}
+.special .button {
+  position: relative;
+  top: -28px;
+}
+
+
+
+article {
+  font-family: "SegoeUIRegular";
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  color: #000;
+}
+article p,
+article ul,
+article h3 {
   margin: 0;
   margin-bottom: 15px;
 }
-.special__content ul li {
+article ul li {
   list-style: none;
   display: block;
   padding-left: 20px;
   position: relative;
+  font-size: 14px;
 }
-.special__content ul li:before {
+article ul li:before {
   height: 8px;
   width: 8px;
   content: '';
@@ -1073,26 +1095,32 @@ footer a:hover {
   left: 0;
   box-sizing: border-box;
 }
-.special__content h3 {
+article h3 {
   font-size: 24px;
   font-family: 'proxima_nova_extrabold';
 }
-.special__content h4 {
+article h4 {
   color: #7f1f19;
   font-size: 16px;
   font-weight: bold;
 }
-
-.special .button {
-  position: relative;
-  top: -28px;
+article img {
+  max-width: 100%;
+  margin: 75px auto;
+  height: auto;
+  box-shadow: 0px 5px 53px 0px rgba(0, 0, 0, .5);
 }
+
+
+
+
+
 
 .example {
   margin-bottom: 30px;
 }
 .example .wrap {
-  box-shadow: 0px 5px 53px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 2px 51px 0px rgba(0, 0, 0, .5);
 }
 .example h3 {
   font-size: 24px;
@@ -1131,4 +1159,78 @@ footer a:hover {
 }
 .example .limit .container span strong {
   font-size: 26px;
+}
+
+
+/*about page*/
+
+
+/*special training page*/
+.example .video {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.example .video.vertical:after {
+  vertical-align: bottom;
+}
+.example .video p {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 22px;
+  line-height: 30px;
+  max-width: 95%;
+  color: #fff;
+  text-align: left;
+}
+.example .video.text {
+  padding: 35px;
+}
+.example .limit .button {
+  margin-top: 20px;
+}
+
+
+.special_training {
+  padding-bottom: 60px;
+}
+.special_training article:nth-of-type(2n) .special__preview {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+.special_training article:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.special_training .button {
+  top: 0;
+  margin-top: 60px;
+}
+
+
+/*contacts page*/
+.contacts {
+  padding-bottom: 30px;
+}
+.media-item__video--image {
+  height: auto;
+  float: right;
+}
+.media-item__title--left {
+  left: -70px;
+  right: auto;
+  text-align: left;
+  padding-left: 35px;
+}
+.contacts .media-item__title span {
+  font-size: 18px;
+  line-height: normal;
+}
+.contacts .media-item__title a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
 }
