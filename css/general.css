@@ -1016,9 +1016,19 @@ footer a:hover {
 }
 .garanty {
   width: 25%;
-  padding-bottom: 35px;
+  padding: 35px 0;
   position: relative;
-  margin-bottom: 35px;
+}
+.garanty:not(:nth-child(4n)):before {
+  content: '';
+  width: 2px;
+  height: 80%;
+  background: #fff;
+  opacity: .1;
+  position: absolute;
+  right: -1px;
+  top: 10%;
+  bottom: 10%;
 }
 .garanty:nth-child(-n+4):after {
   content: '';
