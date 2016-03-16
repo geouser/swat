@@ -785,7 +785,7 @@ footer ul {
 }
 
 .site_map {
-  padding: 20px 0;
+  padding: 20px 0 10px;
 }
 .site_map > div:not(:last-child) {
   padding-right: 55px;
@@ -1024,21 +1024,31 @@ footer a:hover {
 
 /*specials page*/
 .garanties {
-  padding: 80px 0 15px;
+  padding: 80px 0 45px;
   background-image: url(../images/garanty_bg.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
 .garanties h2 {
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 28px;
 }
 .garanty {
   width: 25%;
-  padding-bottom: 35px;
+  padding: 35px 0;
   position: relative;
-  margin-bottom: 35px;
+}
+.garanty:not(:nth-child(4n)):before {
+  content: '';
+  width: 2px;
+  height: 80%;
+  background: #fff;
+  opacity: .1;
+  position: absolute;
+  right: -1px;
+  top: 10%;
+  bottom: 10%;
 }
 .garanty:nth-child(-n+4):after {
   content: '';
@@ -1174,10 +1184,11 @@ article img {
 
 
 .example {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .example .wrap {
   box-shadow: 0px 2px 51px 0px rgba(0, 0, 0, .5);
+  position: relative;
 }
 .example h3 {
   font-size: 24px;
@@ -1290,4 +1301,72 @@ article img {
   color: #fff;
   font-size: 18px;
   line-height: 28px;
+}
+
+
+
+
+/*album page*/
+.photos .flex:after {
+  width: 285px;
+  content: '';
+  display: block;
+}
+.photos a {
+  width: 285px;
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  z-index: 1;
+  padding: 5px;
+}
+.photos a img {
+  width: auto;
+  height: auto;
+  max-width: 150%;
+  min-width: 100%;
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+}
+.photos a:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/zoom.png);
+  background-size: 80px auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: rgba(127, 31, 25, .7);
+  z-index: 2;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.photos a:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.photos a:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+.photos a:hover:after {
+  visibility: visible;
+  opacity: .4;
 }
