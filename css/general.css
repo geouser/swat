@@ -178,7 +178,7 @@ h2 {font: 36px 'proxima_nova_bold'; text-align: center; color: #FFF; text-transf
                             -o-background-size: cover;
                                background-size: cover;
                   }
-
+.coursePage .offer {background-image: url("../images/course_bg.jpg");}
 .aboutPage .offer {background-image: url("../images/about_bg.jpg");}
 .specialsPage .offer {background-image: url("../images/spec_bg.jpg");}
 .specTrainPage .offer {background-image: url("../images/spectrain_bg.jpg");}
@@ -587,6 +587,26 @@ h1 span                                 {   display: block; font: 30px 'proxima_
 span.aboutBlock_item_num {width: 75px; height: 90px; background-image: url("../images/about_img.png"); -webkit-background-size: 100% 100%;
      -o-background-size: 100% 100%;
         background-size: 100% 100%; text-align: center; font: 21px 'proxima_nova_extrabold'; display: block; margin: 0 auto 10px; padding-top: 15px; padding-right: 3px;}
+
+.course_details {margin-top: 75px;}
+.course_details h2 {color: #000; margin-bottom: 95px;}
+.course_details {background-image: url("../images/course_details.jpg"); background-repeat: no-repeat; background-position: 0 69%;}
+.course_details .row {margin-bottom: 70px; position: relative;}
+.course_details_item .num {display: block; height: 45px; width: 45px; -webkit-border-radius: 50%;
+        border-radius: 50%;  color: #FFF; text-align: center; font: 24px 'proxima_nova_bold'; margin: 0 auto 15px; line-height: 47px; background-color: #7F1F19;}
+ .course_details_item {width: 240px;}
+ .course_details_item span       {font: 16px 'proxima_nova_bold'; max-width: 190px; display: block; margin: 0 auto; text-align: center;}
+
+.row:nth-of-type(3) .course_details_item:first-of-type {margin-left: 237px;}
+.row:nth-of-type(3) .course_details_item:last-of-type  {margin-right: 237px;}
+
+.row:nth-of-type(3),
+.row:nth-of-type(4) {margin-bottom: 90px;}
+
+.course_details +  .button {margin-top: 10px !important;}
+
+.course_details .row .button {position: absolute; margin: auto;  top: -40px; font: 18px 'proxima_nova_extrabold'; 
+height: 33px; line-height: 35px; padding: 0 15px; left: 46%;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
